@@ -2,9 +2,10 @@
 Rest using express module
 
 ## To run: 
+```
 npm install
 npm start
-
+```
 ## Endpoints:
 ```
 GET 	/Product
