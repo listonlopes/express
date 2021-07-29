@@ -1,4 +1,4 @@
-const { product, writeData } = require('../data.js');
+const { product, writeData } = require('../data/data.js');
 
 module.exports = async(req, res) => {
     console.log('POST',req.url);

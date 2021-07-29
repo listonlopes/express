@@ -1,4 +1,4 @@
-const { product, writeData } = require('../data.js');
+const { product, writeData } = require('../data/data.js');
 
 module.exports = (req, res) => {
     let id = req.params.id;
