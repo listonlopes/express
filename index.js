@@ -3,10 +3,6 @@ const app = express();
 
 const port = 3000;
 const hostname = 'localhost';
-const {  getProducts, getProduct } = require('./module/getProduct.js');
-
-
-
 
 app.use(express.json({
     verify: (req, res, buffer, encoding) => {
@@ -20,14 +16,13 @@ app.use(express.json({
     }
 }));
 
-
-const getProducts = require('./module/getProducts.js');
+const getProducts = require('./module/getProducts');
 app.get('/Products', getProducts);
 
 const createProduct = require('./module/createProduct');
 app.post('/Product', createProduct);
 
-const getProduct = require('./module/getProduct.js');
+const getProduct = require('./module/getProduct');
 app.get('/Product/:id', getProduct);
 
 const updateProduct = require('./module/updateProduct');

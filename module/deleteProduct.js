@@ -8,7 +8,6 @@ module.exports = (req, res) => {
         delete product[id];
         writeData(product);
         return res.status(201).json({ sucess: "Product is sucessfully deleted." });     
-    }
-   
+    }   
     return res.status(404).json({ error: "Product does not exists." });
 }

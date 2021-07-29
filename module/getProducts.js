@@ -1,6 +1,5 @@
 const { product } = require('../data.js');
 
-
 module.exports = (req, res) => {
     console.log('GET',req.url);
     if(Object.keys(product).length !== 0){
